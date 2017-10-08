@@ -13,53 +13,84 @@
     <body>
         <div class="wrapper">
             <header>
-                    <div class="row-detail">
+                    <div class="row">
                         <div class="navbar">
-                            <div class="menu-item"><a class="text-link" href="index.html">home</a></div>
+                            <div class="menu-item"><a id="focus">home</a></div>
                             <div class="menu-item"><a class="text-link" href="shop.html">shop</a></div>
                             <div class="menu-item"><a href="index.html"> <img alt="shop logo" src="img/logo.png"></a></div>
                             <div class="menu-item"><a class="text-link" href="#">log in</a></div>
-                            <div class="menu-item">
-                                <a class="text-link" href="#">cart</a>
-                                <i>
-                                    <span id="cart-quality">0</span>
-                                </i>
-                            </div>
+                            <div class="menu-item"><a class="text-link" href="#">cart</a><i><span id="cart-quality">0</span></i></div>
                         </div>
                     </div>
             </header>
 
-            <section id="product-detail">
+            <section id="feature-intro">
                 <div class="image-container">
-                    <img src="img/3-walnut.jpg" alt="" id="product-detail-photo">
-                    <div class="quantity"> 
-                        <p>Qty.</p>
-                        <button class="plus-btn" type="button" name="button" onclick="addQty()">
-                            <i class="fa fa-plus" aria-hidden="true"></i>
-                        </button>
-                        <input type="text" id="input_qty" value="1">
-                        <button class="minus-btn" type="button" name="button" onclick="dropQty()">
-                            <i class="fa fa-minus" aria-hidden="true"></i>
-                        </button>
+                    <img src="img/home-top-img.jpg" alt="">
+                    <div class="on-image">
+                        <h1 class="welcome-font">welcome to</h1> 
+                        <h2>bun bun bake shop</h2>
+                        <a class="image-btn" href="shop.html">order now</a>
                     </div>
                 </div>
             </section>
             
-            <section id="detail-container">
-                <h2>Walnut</h2>
-                <div class="ingredient-wrap">
-                    <img src="img/walnut-roll-2.jpg">
-                </div>
-                <div class="detail-info">
-                    <p>These walnut cinnamon rolls are packed with so much flavor making icing or glaze unnecessary. </p>
-                    <p>Perfect for breakfast, brunch, or any time of day!</p>
-                </div>
-                <div class="add-product">
-                    <p> Price: $<span id="current-price">8</span></p>
-                    <a class="addcart-btn" href="#" onclick="addCart()" onmouseover="zoomImg()" onmouseout="resetImg()" >add to cart</a>
+            <section id="feature-product">
+                <div class="container">
+                    <div class="intro-text">
+                        <h3>We make award-winning cinnamon rolls in Pittsburgh!</h3>
+                        <h4>We’re not your typical cinnamon roll shop. We offer more than just your average ‘Old Fashioned’ roll. We have a variety of different flavors that are waiting to be explored, all made with the highest quality ingredients to tickle your taste buds.<br>All of our award-winning cinnamon rolls can be ordered online and delivered to your place.</h4>
+                    </div>
+
+                    <div class="product-container">
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="img/1-maple%20apple.jpg" class="product-thumbnail">
+                            </div>
+                            <div class="product-info">
+                                <h5>maple apple pecan</h5>
+                                <p> Huge, deliciously sinful cinnamon rolls stuffed with apples and pecans and drizzled with a buttery maple syrup. Insane!</p>
+                            </div>
+                            <div class="more-btn"><a href="maple_apple_pecan.html">learn more</a></div>
+                        </div>
+
+
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="img/11-strawberry.jpg" class="product-thumbnail">
+                            </div>
+                            <div class="product-info">
+                                <h5>strawberry rhubarb</h5>
+                                <p>These Strawberry Rhubarb Cinnamon Rolls are filled with cinnamon, sugar, fresh strawberries, and rhubarb, and topped with a sweet strawberry-rhubarb glaze.</p>
+                            </div>
+                            <div class="more-btn"><a href="straberry_rhubarb.html">learn more</a></div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="img/8-caramel.jpg" class="product-thumbnail">
+                            </div>
+                            <div class="product-info">
+                                <h5>caramel pecan</h5>
+                                <p>Lovely cinnamon rolls with a gooey pecan topping. Who loves moist &amp; fluffy cinnamon rolls as much as I do?! Well, apparently a lot of you! </p>
+                            </div>
+                            <div class="more-btn"><a href="caramel_pecan.html">learn more</a></div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="img/14-cranberry.jpg" class="product-thumbnail">
+                            </div>
+                            <div class="product-info">
+                                <h5>Cranberry</h5>
+                                <p>These festive cranberry-cinnamon breakfast rolls will be everyone's new favorite morning treat and are especially great around the holidays.</p>
+                            </div>
+                            <div class="more-btn"><a href="cranberry.html">learn more</a></div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            
+        
             <footer class="footer">
                 <div class="container">
                     <div class="footer-logo">
