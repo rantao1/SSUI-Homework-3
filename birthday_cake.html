@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+    <head>
+        <title>Bun Bun Bake Shop</title>
+        <meta charset="utf-8">
+        <meta name="description" content="The official website for Bun Bun Bake Shop, assignment 3 for SSUI">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" media="all" rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400,900" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                    <div class="row-detail">
+                        <div class="navbar">
+                            <div class="menu-item"><a class="text-link" href="home.html">home</a></div>
+                            <div class="menu-item"><a class="text-link" href="shop.html">shop</a></div>
+                            <div class="menu-item"><a href="home.html"> <img alt="shop logo" src="img/logo.png"></a></div>
+                            <div class="menu-item"><a class="text-link" href="#">log in</a></div>
+                            <div class="menu-item">
+                                <a class="text-link" href="#">cart</a>
+                                <i>
+                                    <span id="cart-quality">0</span>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+            </header>
+
+            <section id="product-detail">
+                <div class="image-container">
+                    <img src="img/12-birthday%20cake.jpg" alt="" id="product-detail-photo">
+                    <div class="quantity"> 
+                        <p>Qty.</p>
+                        <button class="plus-btn" type="button" name="button" onclick="addQty()">
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <input type="text" id="input_qty" value="1">
+                        <button class="minus-btn" type="button" name="button" onclick="dropQty()">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="detail-container">
+                <h2>Birthday Cake</h2>
+                <div class="ingredient-wrap">
+                    <img src="img/birthday-cake-cinnamon-roll-2.jpg">
+                </div>
+                <div class="detail-info">
+                    <p> Start your day with cake? I say yes!</p>
+                    <p>Whether you're celebrating a birthday or the start of the weekend, these cake mix cinnamon rolls are the perfect excuse to eat sprinkles for breakfast.</p>
+                </div>
+                <div class="add-product">
+                    <p> Price: $<span id="current-price">14</span></p>
+                    <a class="addcart-btn" href="#" onclick="addCart()" onmouseover="zoomImg()" onmouseout="resetImg()" >add to cart</a>
+                </div>
+            </section>
+            
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-logo">
+                        <img src="img/logo-w.png" alt="logo" class="footer-logo">
+                    </div>
+                    <div class="footer-menu">
+                        <ul class="nav-footer">
+                            <li class="menu-item">
+                                <a href="#">shop</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">cart</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">hours</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">contact us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">terms of service</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">privacy policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subscribe-part">
+                        <p>never miss new rolls!<br>subscribe now!</p>
+                        <input class="user-email" type="text" placeholder="Enter you email">
+                        <div class="subscribe-btn">></div>
+                        <div class="copyright"> © 2017 Bun Bun Bake Shop.  All Rights Reserved.</div>
+                    </div>
+                    <div class="social-media">
+                        <ul>
+                            <li class="instagram">
+                                <a href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="twitter">
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="facebook">
+                                <a href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true">
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="creator-text">
+                            <p>Created by Ran Tao, CMU</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+        
+        <script type="text/javascript" src="script.js"></script>
+        <script src="https://use.fontawesome.com/c734d36cd5.js"></script>
+    </body>
+
+</html>
