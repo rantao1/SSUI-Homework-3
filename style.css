@@ -215,7 +215,7 @@ header .menu-item {
     margin: auto;
     width: 40vw;
     position: absolute;
-    top: 74%;
+    top: 90vh;
 }
 
 .add-product p {
@@ -252,8 +252,8 @@ header .menu-item {
     background: rgba(255, 255, 255, .85);
     width: 15em;
     height: 4em;
-    top:75%;
-    left: 85%;
+    top: 86.5vh;
+    left: 50vw;
     transform: translate(-50%, 50%);
 }
 
